@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ShopifyTests" tests="4" time="450.641676" failures="1" errors="2" skipped="0" assertions="4">
+  <testcase name="test_000_shopify_cleanup" time="62.98619" assertions="0">
+    <error type="Errno::ECONNREFUSED" message="Connection refused - connect(2)">
+Connection refused - connect(2) (Errno::ECONNREFUSED)
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:878:in `initialize'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:878:in `open'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:878:in `block in connect'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/timeout.rb:52:in `timeout'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:877:in `connect'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:862:in `do_start'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:851:in `start'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1367:in `request'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/default.rb:83:in `response_for'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/default.rb:39:in `request'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/common.rb:40:in `call'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:634:in `raw_execute'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:612:in `execute'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:206:in `close'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/common/driver.rb:176:in `close'
+/Users/admin/Desktop/granify_tests copy/02_19_14/lib/shopify_tests.rb:28:in `teardown'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:202:in `block in run_fixture_callback'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:207:in `call'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:207:in `run_fixture_callback'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:190:in `block in run_fixture'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:189:in `each'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:189:in `run_fixture'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/fixture.rb:223:in `run_teardown'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testcase.rb:334:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testsuite.rb:53:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testsuite.rb:53:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunnermediator.rb:54:in `run_suite'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunner.rb:40:in `start_mediator'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunner.rb:25:in `start'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/autorunner.rb:369:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/autorunner.rb:58:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit.rb:326:in `block in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="test_002_shopify_offer_creation" time="74.693267" assertions="3">
+  </testcase>
+  <testcase name="test_003_shopify_plugin_installation" time="218.786893" assertions="1">
+    <failure type="Test::Unit::AssertionFailedError" message="Offer not appeared or offer information is wrong....">
+Offer not appeared or offer information is wrong.
+&lt;false&gt; is not true. (Test::Unit::AssertionFailedError)
+/Users/admin/Desktop/granify_tests copy/02_19_14/lib/shopify_tests.rb:169:in `test_003_shopify_plugin_installation'    </failure>
+  </testcase>
+  <testcase name="test_004_shopify_purchase_stats_verification" time="94.174359" assertions="0">
+    <error type="Net::ReadTimeout" message="Net::ReadTimeout">
+Net::ReadTimeout (Net::ReadTimeout)
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/protocol.rb:158:in `rescue in rbuf_fill'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/protocol.rb:152:in `rbuf_fill'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/protocol.rb:134:in `readuntil'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/protocol.rb:144:in `readline'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http/response.rb:39:in `read_status_line'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http/response.rb:28:in `read_new'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1406:in `block in transport_request'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1403:in `catch'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1403:in `transport_request'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1376:in `request'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1369:in `block in request'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:852:in `start'
+/Users/admin/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/net/http.rb:1367:in `request'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/default.rb:83:in `response_for'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/default.rb:39:in `request'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/http/common.rb:40:in `call'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:634:in `raw_execute'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:612:in `execute'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/remote/bridge.rb:428:in `submitElement'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/selenium-webdriver-2.39.0/lib/selenium/webdriver/common/element.rb:179:in `submit'
+/Users/admin/Desktop/granify_tests copy/02_19_14/lib/ObjectRepository/or_shopify.rb:22:in `_shopify_login'
+/Users/admin/Desktop/granify_tests copy/02_19_14/lib/shopify_tests.rb:180:in `test_004_shopify_purchase_stats_verification'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testcase.rb:562:in `run_test'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testcase.rb:326:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testsuite.rb:53:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/testsuite.rb:53:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunnermediator.rb:54:in `run_suite'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunner.rb:40:in `start_mediator'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunner.rb:25:in `start'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/autorunner.rb:369:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit/autorunner.rb:58:in `run'
+/Users/admin/.rvm/gems/ruby-2.0.0-p353/gems/test-unit-2.4.8/lib/test/unit.rb:326:in `block in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
