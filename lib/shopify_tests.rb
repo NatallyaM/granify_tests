@@ -173,6 +173,7 @@ class ShopifyTests < Test::Unit::TestCase
     end
   end
   
+=begin
   def test_004_shopify_purchase_stats_verification
     begin
     #create discount in shopify admin area
